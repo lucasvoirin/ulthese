@@ -1,0 +1,28 @@
+project:
+  type: book
+  output-dir: docs
+  
+format:
+  ulthese-pdf:
+    classoption: PhD
+
+title: "Titre"
+author: "Auteur"
+director: "Directeur"
+codirector: "Codirecteur"
+year: "année"
+lang: fr
+
+book:
+  chapters:
+    - index.qmd
+    - chapitre1.qmd
+    - chapitre2.qmd
+    - chapitre3.qmd
+    - conclusion.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+csl: ecology.csl
+    

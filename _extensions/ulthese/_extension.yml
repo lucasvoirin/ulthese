@@ -1,0 +1,28 @@
+title: ulthese
+author: lucasvoirin
+version: 1.0.0
+quarto-required: ">=1.6.0"
+contributes:
+  metadata:
+    project:
+      language: _language-fr.yml
+  formats:
+    pdf:
+      documentclass: ulthese
+      classoption: [english,french,nonatbib]
+      keep-tex: false
+      keep-md: false
+      include-before-body:
+        - text: |
+            \pagetitre
+      template: template-ulthese.tex
+      template-partials:
+        - partials/before-title.tex
+        - partials/doc-class.tex
+        - partials/before-body.tex
+        - partials/pandoc.tex
+      toc: false
+      citeproc: true
+      link-citations: true
+      format-ressources:
+        - _language-fr.yml

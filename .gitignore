@@ -1,0 +1,6 @@
+*-files/*
+index.tex
+index.log
+index.aux
+
+/.quarto/

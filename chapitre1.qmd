@@ -1,0 +1,50 @@
+# Exemples d'utilisation {#sec-chapitre1}
+
+Voici quelques exemples d'utilisation du format. Pour une description plus complète, consultez la documentation de [Quarto](https://quarto.org).
+
+## Figures
+
+![Une abeille sur une fleur. John Severns (Domaine public)](759px-European_honey_bee_extracts_nectar.jpg){#fig-abeille fig-align="center" width=30%}
+
+## Références
+
+Pour citer une référence on utilise le format pandoc. Par exemple je peux citer un article sur les bonnes pratique en science reproductible [@wilson2017].
+
+Il est également possible de faire des liens vers d'autres sections ou éléments. Par exemple avec un lien vers le @sec-chapitre2 ou vers la @fig-abeille.
+
+## Formules mathématiques
+
+$$
+P(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{n!} \int_0^{\infty} e^{-t^2} \left( \frac{d^n}{dt^n} \left[ t^n e^{-x t} \right] \right) dt + \frac{1}{\Gamma(s)} \int_0^{\infty} t^{s-1} e^{-t(x + \lambda)} \, dt
+$$
+
+## Code
+
+Il est également possible d'insérer et d'interpréter du code.
+
+```{r}
+
+# Génération de données simulées
+set.seed(42)  # Pour la reproductibilité
+x <- rnorm(100, mean = 5, sd = 2)
+y <- 3 * x + 2 + rnorm(100, sd = 1)
+
+# Ajustement du modèle de régression linéaire
+mod <- lm(y ~ x)
+
+# Résumé du modèle
+summary(mod)
+
+# Tracé des données et de la droite de régression
+plot(x, y,
+  main = "Régression linéaire",
+  xlab = "x",
+  ylab = "y",
+  pch = 16, col = "blue"
+)
+abline(mod, col = "red", lwd = 2)
+
+# Ajout des résidus
+segments(x, y, x, fitted(mod), col = "gray")
+
+```
