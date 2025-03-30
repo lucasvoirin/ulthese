@@ -13,6 +13,12 @@ codirector: "Codirecteur"
 year: "année"
 lang: fr
 
+list-of-figures: true
+list-of-tables: false
+list-of-contents: true
+
+dedicace: "C'est cool !"
+
 book:
   chapters:
     - index.qmd
@@ -21,6 +27,8 @@ book:
     - chapitre3.qmd
     - conclusion.qmd
     - references.qmd
+  appendices:
+    - annexe1.qmd
 
 bibliography: references.bib
 

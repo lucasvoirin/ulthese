@@ -9,17 +9,25 @@
 % \include{abstract}              % résumé anglais
 % \cleardoublepage
 
+$if(list-of-contents)$
 \tableofcontents           
 \cleardoublepage
+$endif$
 
-% \listoftables                 
-% \cleardoublepage
-
- \listoffigures                 
+$if(list-of-tables)$
+ \listoftables                 
  \cleardoublepage
+$endif$
 
-% \dedicace{$dedicace$}
-% \cleardoublepage
+$if(list-of-figures)$
+  \listoffigures
+  \cleardoublepage
+$endif$
+
+$if(dedicace)$
+ \dedicace{$dedicace$}
+ \cleardoublepage
+$endif$
 
 % \epigraphe{$epigraphe$}{$source-epigraphe$}
 % \cleardoublepage
