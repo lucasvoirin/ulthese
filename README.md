@@ -4,7 +4,9 @@ Ce dépôt contient une extension de format [Quarto](https://quarto.org/) permet
 
 Vous pouvez utiliser cette extension pour la rédaction de documents dans un format requis par la [Faculté des études supérieures et postdoctorales](https://www.fesp.ulaval.ca/) de l'Université Laval.
 
-**Attention!** Il ne s'agit pas d'une extension officielle de la FESP. 
+**Attention!** Il ne s'agit pas d'une extension officielle de la FESP.
+
+**Attention!** Actuellement la version pdf ce format ne supporte pas bien les documents avec des chapitres écrits dans une langue différente du document principal.
 
 ## Installation
 
@@ -19,5 +21,5 @@ Une installation de $\LaTeX$ est nécessaire pour compiler un document Quarto en
 
 ## Options du format
 
-Un exemple de document compilé à partir de ce format présente quelques options disponibles.
+Un [exemple de document](docs/ulthese.pdf) compilé à partir de ce format présente quelques options disponibles.
 Pour plus d'informations sur les options disponibles vous pouvez consulter les [pages d'aide de Quarto à propos du format "Book"](https://quarto.org/docs/books/).
